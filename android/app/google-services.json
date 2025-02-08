@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "138636017756",
+    "firebase_url": "https://paramesh-stores-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "paramesh-stores",
+    "storage_bucket": "paramesh-stores.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138636017756:android:24ab11e2488eb170a6a699",
+        "android_client_info": {
+          "package_name": "com.example.stores"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6XI7z1obGWWiLFphRTw3pOn93oBGd7Pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
