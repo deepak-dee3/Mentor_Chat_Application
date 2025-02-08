@@ -52,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(builder: (context) => ChatScreen()),
       );
     } catch (e) {
-      print(e); // Show error message to users
+      print(e);
     }
   }
 
@@ -167,10 +167,10 @@ class _ChatScreenState extends State<ChatScreen> {
                     final sender = message['sender'];
                     final timestamp = message['timestamp'] != null
         ? (message['timestamp'] as Timestamp).toDate()
-        : null; // Ensure timestamp is available
+        : null; 
     final time = timestamp != null
         ? "${timestamp.hour}:${timestamp.minute.toString().padLeft(2, '0')}"
-        : "N/A"; // Format the time
+        : "N/A"; 
                     final isMe = sender == _auth.currentUser!.email;
                     return Container(
                       
@@ -348,96 +348,3 @@ class _JitsiMeetingScreenState extends State<JitsiMeetingScreen> {
   }
 }
 
-
-// import 'package:flutter/material.dart';
-// import 'package:url_launcher/url_launcher.dart';
-
-// void main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: EmptyScreen(),
-//     );
-//   }
-// }
-
-// class EmptyScreen extends StatelessWidget {
-//   // Function to send a message via WhatsApp
-//   void launchWhatsApp({@required number , @required message}) async{
-
-//     String url = "whatsapp://send?phone=$number&text=$message";
-
-//     await canLaunchUrl(url) ? launch(url) : print('not open');
-
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('WhatsApp Message'),
-//       ),
-//       body: Center(
-//         child: ElevatedButton(
-//           onPressed: () {
-//            launchWhatsApp(number: "+918870853143", message: "hello");
-//           },
-//           child: Text('Send Message to WhatsApp'),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-// import 'package:flutter/material.dart';
-// import 'package:url_launcher/url_launcher.dart';
-
-// void main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: EmptyScreen(),
-//     );
-//   }
-// }
-
-// class EmptyScreen extends StatelessWidget {
-//   // Function to send a message via WhatsApp
-//   void launchWhatsApp({required String number, required String message}) async {
-//     final Uri whatsappUri = Uri.parse("whatsapp://send?phone=$number&text=$message");
-
-//     if (await canLaunchUrl(whatsappUri)) {
-//       await launchUrl(whatsappUri);
-//     } else {
-//       // Display a snackbar if WhatsApp is not installed
-//       print("WhatsApp not installed or cannot open URL");
-//     }
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('WhatsApp Message'),
-//       ),
-//       body: Center(
-//         child: ElevatedButton(
-//           onPressed: () {
-//             launchWhatsApp(number: "+918925691410", message: "Hello! This is a test message.");
-//           },
-//           child: Text('Send Message to WhatsApp'),
-//         ),
-//       ),
-//     );
-//   }
-// }
