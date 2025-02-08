@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:jitsi_meet/jitsi_meet.dart';
+import 'package:stores/Jitsi_VC.dart';
 
 
 void main() async {
@@ -129,6 +130,13 @@ class _ChatScreenState extends State<ChatScreen> {
             icon: Icon(Icons.logout),
             onPressed: _logout,
           ),
+          IconButton(
+            onPressed: ()
+            {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>JitsiMeetingScreen()));
+            },
+            icon:Icon(Icons.abc)
+          )
         ],
   title: ShaderMask(
     shaderCallback: (bounds) => LinearGradient(
@@ -278,4 +286,3 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 }
-
