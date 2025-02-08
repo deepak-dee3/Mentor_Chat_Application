@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   cloud_firestore: ^5.6.3
   url_launcher: ^6.3.1
-  jitsi_meet: ^4.0.0
+  
 
 dev_dependencies:
   flutter_test:
