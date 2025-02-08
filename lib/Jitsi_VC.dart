@@ -21,7 +21,7 @@ class _JitsiMeetingScreenState extends State<JitsiMeetingScreen> {
   void _joinMeeting() async {
     try {
       var options = JitsiMeetingOptions(
-        room: _roomController.text, // Required, unique room name
+        room: _roomController.text, // Required, unique room name and 
       )
         ..userDisplayName = _nameController.text
         ..audioMuted = false
