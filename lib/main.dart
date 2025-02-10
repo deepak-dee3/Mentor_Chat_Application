@@ -82,11 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Text('Register'),
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
+        ),),);}}
 
 class ChatScreen extends StatefulWidget {
   @override
