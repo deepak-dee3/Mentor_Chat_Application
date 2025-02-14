@@ -131,7 +131,7 @@ class _ChatScreenState extends State<ChatScreen> {
             },
             icon:Icon(Icons.abc)
           )
-        ],
+       ],
   title: ShaderMask(
     shaderCallback: (bounds) => LinearGradient(
       colors: [Colors.black, Colors.blue],
