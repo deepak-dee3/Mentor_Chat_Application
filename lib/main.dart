@@ -147,7 +147,6 @@ class _ChatScreenState extends State<ChatScreen> {
     ),
   ),
 ),
-
       body: Column(
         children: [
           Expanded(
