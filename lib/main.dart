@@ -146,7 +146,6 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
     ),
   ),
-  //backgroundColor: Colors.blueGrey, // Set your AppBar background color
 ),
 
       body: Column(
