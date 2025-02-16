@@ -258,6 +258,13 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
                     ),
                   ),
+
+                  Container(
+                    child:Container(
+                      child:Icon(Icons.add,size:10),
+                    )
+
+                  ),
                   SizedBox(width: 10,),
                   CircleAvatar(
                     backgroundColor: Colors.blue,
