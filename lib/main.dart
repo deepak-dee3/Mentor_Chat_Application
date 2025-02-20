@@ -226,8 +226,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   },
                 );
               },
-            ),
-          ),
+            ), ),
          Container(
               decoration: BoxDecoration(
                 color: Colors.transparent,
