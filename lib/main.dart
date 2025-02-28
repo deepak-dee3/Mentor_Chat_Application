@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:jitsi_meet/jitsi_meet.dart';
-import 'package:stores/Jitsi_VC.dart';
+// import 'package:jitsi_meet/jitsi_meet.dart';
+// import 'package:stores/Jitsi_VC.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -127,7 +127,7 @@ class _ChatScreenState extends State<ChatScreen> {
           IconButton(
             onPressed: ()
             {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>JitsiMeetingScreen()));
+              //Navigator.push(context, MaterialPageRoute(builder: (context)=>JitsiMeetingScreen()));
             },
             icon:Icon(Icons.abc)
           )

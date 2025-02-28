@@ -39,7 +39,7 @@ dependencies:
   url_launcher: ^6.3.1
   ikchatbot: ^1.0.5
   kommunicate_flutter: ^2.0.1
-  jitsi_meet: ^4.0.0
+  
 
   
 
